@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Imbue', serif;
 }
 
 .first-part {
@@ -14,11 +14,11 @@ body {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 60px;
+  height: 50px;
   background: rgb(31, 31, 90);
   color: white;
-  font-size: 25px;
-  padding: 0px 40px;
+  font-size: 22px;
+  padding: 0px 110px;
 }
 
 .phone-number a {
@@ -38,10 +38,15 @@ body {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 120px;
-  background: rgb(71, 71, 173);
+  height: 90px;
+  background: rgb(31, 31, 90);
+  /* background: rgb(71, 71, 173); */
   color: white;
-  padding: 0px 70px;
+  padding: 0px 110px;
+}
+
+.second-part h2 {
+  font-size: 35px;
 }
 
 nav {
@@ -52,7 +57,8 @@ nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  font-size: 21px;
+  font-size: 23px;
+  letter-spacing: 1px;
   font-weight: 600;
 }
 
@@ -83,7 +89,7 @@ li:hover {
 
 .third-part h1 {
   color: white;
-  font-size: 65px;
+  font-size: 75px;
 }
 
 .third-part button {
@@ -114,5 +120,76 @@ li:hover {
 }
 
 .fifth-part {
-  background-color: rgb(243, 243, 243);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 1000px;
+  background-color: rgb(219, 219, 219);
+}
+
+.fifth-part-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+}
+
+.fifth-part-cards .card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+}
+
+.fifth-part-cards .card .card-img {
+  width: 50%;
+  height: 100%;
+}
+
+.fifth-part-cards .card .card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-details {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 56px;
+  justify-content: space-evenly;
+}
+
+.card-details h2 {
+  color: goldenrod;
+}
+
+.card-details p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-details h3 {
+  color: rgb(165, 165, 165);
+}
+
+.fifth-part button {
+  border: unset;
+  border-radius: 4px;
+  padding: 18px;
+  font-size: 22px;
+  color: rgb(238, 238, 255);
+  cursor: pointer;
+  background-color: rgb(173, 136, 40);
+  transition: all 0.3s;
+}
+
+.fifth-part button:hover {
+  background-color: rgb(177, 150, 84);
 }
