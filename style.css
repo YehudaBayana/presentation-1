@@ -15,7 +15,7 @@ body {
   flex-wrap: wrap;
   width: 100%;
   height: 50px;
-  background: rgb(31, 31, 90);
+  background: #192b42;
   color: white;
   font-size: 22px;
   padding: 0px 110px;
@@ -39,7 +39,7 @@ body {
   flex-wrap: wrap;
   width: 100%;
   height: 90px;
-  background: rgb(31, 31, 90);
+  background: #192b42;
   /* background: rgb(71, 71, 173); */
   color: white;
   padding: 0px 110px;
@@ -92,7 +92,8 @@ li:hover {
   font-size: 75px;
 }
 
-.third-part button {
+.third-part a {
+  text-decoration: none;
   border: unset;
   border-radius: 4px;
   padding: 18px;
@@ -103,7 +104,7 @@ li:hover {
   transition: all 0.3s;
 }
 
-.third-part button:hover {
+.third-part a:hover {
   background-color: rgb(150, 122, 84);
 }
 
@@ -192,4 +193,139 @@ li:hover {
 
 .fifth-part button:hover {
   background-color: rgb(177, 150, 84);
+}
+
+.sixth-part {
+  display: flex;
+  height: 100vh;
+}
+
+.sixth-part .contact {
+}
+
+.sixth-part .form {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.sixth-part .form form {
+  background: rgb(228, 228, 228);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 75%;
+  height: 80%;
+  box-shadow: 1px 1px 22px rgb(216, 216, 216);
+}
+
+.sixth-part .form form input,
+.sixth-part .form form button {
+  width: 62%;
+  height: 41px;
+  padding: 3px 13px;
+  font-size: 17px;
+  background: white;
+}
+
+.sixth-part .form form textarea {
+  width: 62%;
+  padding: 3px 13px;
+  font-size: 17px;
+  background: white;
+  color: black;
+}
+
+.sixth-part .form form button {
+  background-color: #253f61;
+  color: white;
+  font-size: 19px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: unset;
+  border-radius: 3px;
+}
+
+.sixth-part .form form button:hover {
+  background-color: #47658d;
+}
+
+.sixth-part .contact {
+  display: grid;
+  grid-template-areas:
+    'h2 h2'
+    'p1 p1'
+    'h3 p2'
+    'h4 p3'
+    'h5 a'
+    'h5 a2'
+    'a-social a-social';
+  width: 50%;
+  padding-left: 100px;
+  padding-top: 75px;
+}
+
+.sixth-part .contact h2 {
+  grid-area: h2;
+  font-size: 50px;
+}
+
+.sixth-part .contact .p1 {
+  grid-area: p1;
+  font-size: 25px;
+}
+
+.sixth-part .contact .p2 {
+  grid-area: p2;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sixth-part .contact .p3 {
+  grid-area: p3;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sixth-part .contact h3 {
+  grid-area: h3;
+  font-size: 30px;
+}
+.sixth-part .contact h4 {
+  grid-area: h4;
+  font-size: 30px;
+}
+.sixth-part .contact h5 {
+  grid-area: h5;
+  font-size: 30px;
+}
+
+.sixth-part .contact .number {
+  grid-area: a;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: darkblue;
+}
+
+.sixth-part .contact .email {
+  grid-area: a2;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: darkblue;
+}
+
+.social-sixth {
+  width: fit-content;
+  height: fit-content;
+  float: left;
+  color: black;
+  font-size: 40px;
+  transition: color 0.3s;
+}
+
+.social-sixth:hover {
+  color: blue;
 }
