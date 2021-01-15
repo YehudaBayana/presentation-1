@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: 'Imbue', serif;
+  font-family: 'Bodoni Moda', serif;
+  direction: rtl;
 }
 
 .first-part {
@@ -23,7 +24,12 @@ body {
 
 .phone-number a {
   text-decoration: none;
-  color: rgb(136, 201, 255);
+  color: rgb(211, 185, 151);
+  transition: color 0.3s;
+}
+
+.phone-number a:hover {
+  color: white;
 }
 
 .social-first {
@@ -40,7 +46,6 @@ body {
   width: 100%;
   height: 90px;
   background: #192b42;
-  /* background: rgb(71, 71, 173); */
   color: white;
   padding: 0px 110px;
 }
@@ -60,6 +65,11 @@ nav ul {
   font-size: 23px;
   letter-spacing: 1px;
   font-weight: 600;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
 }
 
 nav ul li {
@@ -88,8 +98,11 @@ li:hover {
 }
 
 .third-part h1 {
+  text-align: center;
   color: white;
   font-size: 75px;
+  letter-spacing: 4px;
+  width: 40%;
 }
 
 .third-part a {
@@ -117,7 +130,7 @@ li:hover {
 }
 
 .fourth-part h2 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .fifth-part {
@@ -127,6 +140,10 @@ li:hover {
   justify-content: space-evenly;
   height: 1000px;
   background-color: rgb(219, 219, 219);
+}
+
+.fifth-part-h2 {
+  font-size: 28px;
 }
 
 .fifth-part-cards {
@@ -163,21 +180,24 @@ li:hover {
   width: 50%;
   display: flex;
   flex-flow: column wrap;
-  padding-left: 56px;
+  padding-right: 56px;
   justify-content: space-evenly;
 }
 
 .card-details h2 {
   color: goldenrod;
+  font-size: 29px;
+  font-weight: 700;
 }
 
 .card-details p {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
 }
 
 .card-details h3 {
   color: rgb(165, 165, 165);
+  font-size: 18px;
 }
 
 .fifth-part button {
@@ -198,6 +218,10 @@ li:hover {
 .sixth-part {
   display: flex;
   height: 100vh;
+  /* background-image: url(https://images.unsplash.com/photo-1605145536839-7344525b0b3a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fHJvc2UlMjBvbiUyMHBhcGVyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
 }
 
 .sixth-part .contact {
@@ -262,7 +286,7 @@ li:hover {
     'h5 a2'
     'a-social a-social';
   width: 50%;
-  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 75px;
 }
 
@@ -328,4 +352,86 @@ li:hover {
 
 .social-sixth:hover {
   color: blue;
+}
+
+footer {
+  height: 340px;
+  background: #192b42;
+  color: white;
+  padding: 0 150px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+}
+
+.footer-wrapper-small {
+  display: flex;
+  width: 1370px;
+  height: 58%;
+}
+
+.footer-wrapper-small .general-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 25%;
+}
+
+.footer-wrapper-small .follow-us {
+  align-items: center;
+}
+
+.footer-wrapper-small .general-div a {
+  width: fit-content;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(136, 201, 255);
+  font-size: 23px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: rgb(255, 201, 94);
+}
+
+footer h2 {
+  font-size: 35px;
+}
+
+.footer-wrapper-small .follow-us h3 {
+  font-size: 29px;
+}
+
+footer span {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  font-size: 25px;
+}
+
+footer span i {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+footer span i:hover {
+  color: goldenrod;
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
 }
