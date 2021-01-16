@@ -240,9 +240,6 @@ li:hover {
   background-attachment: fixed; */
 }
 
-.sixth-part .contact {
-}
-
 .sixth-part .form {
   display: flex;
   align-items: center;
@@ -572,4 +569,74 @@ footer .copyright {
   filter: grayscale(0%) saturate(2);
   transform: scaleX(1.5);
   animation-play-state: paused;
+}
+
+@media (max-width: 940px) {
+  .fifth-part {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    font-family: 'Bodoni Moda', serif;
+  }
+
+  .fifth-part-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .fifth-part-cards .card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    /* height: 300px; */
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .fifth-part-cards .card .card-img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .fifth-part-cards .card .card-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-details {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 46px;
+    justify-content: space-evenly;
+  }
+
+  .card-details h2 {
+    color: goldenrod;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+
+  .card-details p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+
+  .card-details h3 {
+    color: rgb(165, 165, 165);
+    font-size: 13px;
+    margin: 10px 0;
+  }
 }
