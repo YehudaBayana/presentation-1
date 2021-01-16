@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: 'Bodoni Moda', serif;
+  /* font-family: 'Bodoni Moda', serif; */
+  font-family: 'Roboto', sans-serif;
   direction: rtl;
 }
 
@@ -15,17 +16,18 @@ body {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 50px;
+  height: fit-content;
   background: #192b42;
   color: white;
   font-size: 22px;
-  padding: 0px 110px;
+  padding: 10px 110px;
 }
 
 .phone-number a {
   text-decoration: none;
   color: rgb(211, 185, 151);
   transition: color 0.3s;
+  letter-spacing: 2px;
 }
 
 .phone-number a:hover {
@@ -38,16 +40,25 @@ body {
   width: 10%;
 }
 
+.social-first i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.social-first i:hover {
+  color: rgb(255, 201, 94);
+}
+
 .second-part {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 90px;
+  height: fit-content;
   background: #192b42;
   color: white;
-  padding: 0px 110px;
+  padding: 25px 110px;
 }
 
 .second-part h2 {
@@ -55,16 +66,18 @@ body {
 }
 
 nav {
-  width: 40%;
+  width: 500px;
 }
 
 nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  flex-wrap: wrap;
   font-size: 23px;
   letter-spacing: 1px;
   font-weight: 600;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav ul a {
@@ -109,7 +122,7 @@ li:hover {
   text-decoration: none;
   border: unset;
   border-radius: 4px;
-  padding: 18px;
+  padding: 12px 30px;
   font-size: 22px;
   color: rgb(238, 238, 255);
   cursor: pointer;
@@ -125,7 +138,9 @@ li:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 300px;
+  flex-wrap: wrap;
+  height: fit-content;
+  padding: 50px 50px;
   background: rgb(255, 255, 255);
 }
 
@@ -139,7 +154,8 @@ li:hover {
   align-items: center;
   justify-content: space-evenly;
   height: 1000px;
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(238, 238, 238);
+  font-family: 'Bodoni Moda', serif;
 }
 
 .fifth-part-h2 {
@@ -200,8 +216,8 @@ li:hover {
   font-size: 18px;
 }
 
-.fifth-part button {
-  border: unset;
+.fifth-part a {
+  text-decoration: none;
   border-radius: 4px;
   padding: 18px;
   font-size: 22px;
@@ -211,7 +227,7 @@ li:hover {
   transition: all 0.3s;
 }
 
-.fifth-part button:hover {
+.fifth-part a:hover {
   background-color: rgb(177, 150, 84);
 }
 
@@ -220,8 +236,8 @@ li:hover {
   height: 100vh;
   /* background-image: url(https://images.unsplash.com/photo-1605145536839-7344525b0b3a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fHJvc2UlMjBvbiUyMHBhcGVyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
+  background-size: cover;
+  background-attachment: fixed; */
 }
 
 .sixth-part .contact {
@@ -230,6 +246,8 @@ li:hover {
 .sixth-part .form {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 50%;
 }
 
@@ -239,8 +257,8 @@ li:hover {
   flex-flow: column wrap;
   justify-content: space-evenly;
   align-items: center;
-  width: 75%;
-  height: 80%;
+  width: 500px;
+  height: 600px;
   box-shadow: 1px 1px 22px rgb(216, 216, 216);
 }
 
@@ -251,6 +269,7 @@ li:hover {
   padding: 3px 13px;
   font-size: 17px;
   background: white;
+  border: unset;
 }
 
 .sixth-part .form form textarea {
@@ -392,11 +411,12 @@ footer {
 footer a {
   text-decoration: none;
   color: rgb(136, 201, 255);
-  font-size: 23px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-weight: 600;
   cursor: pointer;
   transition: color 0.3s ease;
+  font-family: 'Roboto', sans-serif;
 }
 
 footer a:hover {
@@ -416,6 +436,7 @@ footer span {
   justify-content: space-between;
   width: 200px;
   font-size: 25px;
+  height: fit-content;
 }
 
 footer span i {
@@ -434,4 +455,121 @@ footer .copyright {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   margin-top: 20px;
+}
+
+/* index3 part */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.container .card {
+  width: 400px;
+  margin: 20px 0;
+}
+
+.reverse {
+  position: relative;
+  width: 100%;
+  height: 270px;
+  box-shadow: 1px 1px 11px gray;
+}
+
+.reverse img {
+  width: 100%;
+  position: absolute;
+  transition: all 1s;
+}
+
+.reverse h2 {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.reverse p {
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  font-size: 16px;
+}
+
+.reverse span {
+  position: absolute;
+  top: 170px;
+  right: 30px;
+  font-size: 19px;
+  color: rgb(28, 100, 0);
+}
+
+.reverse a {
+  position: absolute;
+  top: 210px;
+  right: 55px;
+  text-decoration: none;
+  background-color: rgb(60, 60, 117);
+  color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  font-size: 18px;
+}
+
+.container .card:hover img {
+  transform: rotateY(90deg);
+}
+
+/* index4 part */
+
+.gallery ul {
+  list-style: none;
+  text-align: center;
+}
+
+.gallery li {
+  position: relative;
+  display: inline-block;
+  margin: 35px;
+  background-color: #192b42;
+  color: white;
+  padding: 10px;
+  top: 40px;
+  transition: all 0.3s linear;
+  filter: grayscale(80%);
+}
+
+.gallery li:nth-child(2n) {
+  transform: rotate(10deg);
+  animation: yuda 2s infinite linear alternate;
+}
+.gallery li:nth-child(2n + 1) {
+  transform: rotate(-10deg);
+  animation: yudaa 2s infinite linear alternate;
+}
+
+@keyframes yuda {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(-10deg);
+  }
+}
+@keyframes yudaa {
+  from {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+.gallery li:hover {
+  top: 2px;
+  opacity: 1;
+  filter: grayscale(0%) saturate(2);
+  transform: scaleX(1.5);
+  animation-play-state: paused;
 }
