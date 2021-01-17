@@ -40,6 +40,11 @@ body {
   width: 110px;
 }
 
+.social-first a i {
+  text-decoration: none;
+  color: white;
+}
+
 .social-first i {
   cursor: pointer;
   transition: color 0.3s;
@@ -66,7 +71,7 @@ body {
 }
 
 nav {
-  width: 500px;
+  width: 600px;
 }
 
 nav ul {
