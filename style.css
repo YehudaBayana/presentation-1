@@ -667,7 +667,6 @@ footer .copyright {
     flex-direction: column;
     align-items: center;
     width: 90%;
-    /* height: 300px; */
     height: fit-content;
     background-color: rgb(255, 255, 255);
     margin: 30px 0;
@@ -752,7 +751,6 @@ footer .copyright {
     height: 41px;
     padding: 3px 13px;
     font-size: 17px;
-    background: white;
     border: unset;
   }
 
@@ -762,20 +760,6 @@ footer .copyright {
     font-size: 17px;
     background: white;
     color: black;
-  }
-
-  .sixth-part .form form button {
-    background-color: #253f61;
-    color: white;
-    font-size: 19px;
-    cursor: pointer;
-    transition: all 0.3s;
-    border: unset;
-    border-radius: 3px;
-  }
-
-  .sixth-part .form form button:hover {
-    background-color: #47658d;
   }
 
   .sixth-part .contact {
@@ -797,64 +781,9 @@ footer .copyright {
     margin: 30px 0;
   }
 
-  .sixth-part .contact h2 {
-    grid-area: h2;
-    font-size: 50px;
-  }
-
-  .sixth-part .contact .p1 {
-    grid-area: p1;
-    font-size: 25px;
-  }
-
-  .sixth-part .contact .p2 {
-    grid-area: p2;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-  }
-
-  .sixth-part .contact .p3 {
-    grid-area: p3;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-  }
-
-  .sixth-part .contact h3 {
-    grid-area: h3;
-    font-size: 30px;
-  }
-  .sixth-part .contact h4 {
-    grid-area: h4;
-    font-size: 30px;
-  }
-  .sixth-part .contact h5 {
-    grid-area: h5;
-    font-size: 30px;
-  }
-
-  .sixth-part .contact .number {
-    grid-area: a;
-    font-size: 20px;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    color: darkblue;
-  }
-
-  .sixth-part .contact .email {
-    grid-area: a2;
-    font-size: 20px;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    color: darkblue;
-  }
-
   .social-sixth {
     width: fit-content;
     height: fit-content;
-    float: left;
-    color: black;
-    font-size: 40px;
-    transition: color 0.3s;
   }
 
   footer {
@@ -862,14 +791,6 @@ footer .copyright {
     background: #192b42;
     color: white;
     padding: 0;
-  }
-
-  .footer-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: fit-content;
   }
 
   .footer-wrapper-small {
@@ -884,32 +805,8 @@ footer .copyright {
   .footer-wrapper-small .general-div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: fit-content;
-    text-align: center;
-  }
-
-  .footer-wrapper-small .follow-us {
     align-items: center;
-  }
-
-  .footer-wrapper-small .general-div a {
     width: fit-content;
-  }
-
-  footer a {
-    text-decoration: none;
-    color: rgb(136, 201, 255);
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    font-family: 'Roboto', sans-serif;
-  }
-
-  footer a:hover {
-    color: rgb(255, 201, 94);
   }
 
   footer h2 {
@@ -920,32 +817,6 @@ footer .copyright {
   .footer-wrapper-small .follow-us h3 {
     font-size: 29px;
     margin: 20px 0;
-  }
-
-  footer span {
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-    font-size: 25px;
-    height: fit-content;
-  }
-
-  footer span i {
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-
-  footer span i:hover {
-    color: goldenrod;
-  }
-
-  footer .copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    /* margin-top: 20px; */
   }
 
   footer .copyright h3 {
